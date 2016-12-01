@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>formulahendry</title>
+  <subtitle>A Software Engineer @ Hongkou</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://formulahendry.github.io/"/>
+  <updated>2016-12-01T15:14:50.145Z</updated>
+  <id>https://formulahendry.github.io/</id>
+  
+  <author>
+    <name>formulahendry</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello Hexo</title>
+    <link href="https://formulahendry.github.io/2016/11/30/Hello-Hexo/"/>
+    <id>https://formulahendry.github.io/2016/11/30/Hello-Hexo/</id>
+    <published>2016-11-30T00:24:05.000Z</published>
+    <updated>2016-12-01T15:14:50.145Z</updated>
+    
+    <content type="html"><![CDATA[<p>Hello! Hexo!</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Hello! Hexo!&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
