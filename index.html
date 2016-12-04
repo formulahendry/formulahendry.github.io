@@ -130,19 +130,19 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fl mail" target="_blank" href="#" title="mail">mail</a>
+                                <a class="fl mail" target="_blank" href="mailto:formulahendry@gmail.com" title="mail">mail</a>
                             
                                 <a class="fl github" target="_blank" href="https://github.com/formulahendry" title="github">github</a>
                             
-                                <a class="fl zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                                <a class="fl zhihu" target="_blank" href="https://www.zhihu.com/people/han-jun-96-36" title="zhihu">zhihu</a>
                             
-                                <a class="fl weibo" target="_blank" href="#" title="weibo">weibo</a>
+                                <a class="fl weibo" target="_blank" href="http://weibo.com/formulahendry" title="weibo">weibo</a>
                             
-                                <a class="fl google" target="_blank" href="#" title="google">google</a>
+                                <a class="fl google" target="_blank" href="https://plus.google.com/u/0/108325760150652720243" title="google">google</a>
                             
-                                <a class="fl twitter" target="_blank" href="#" title="twitter">twitter</a>
+                                <a class="fl twitter" target="_blank" href="https://twitter.com/formulahendry" title="twitter">twitter</a>
                             
-                                <a class="fl linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                                <a class="fl linkedin" target="_blank" href="https://cn.linkedin.com/in/jun-han" title="linkedin">linkedin</a>
                             
                                 <a class="fl rss" target="_blank" href="/atom.xml" title="rss">rss</a>
                             
@@ -153,7 +153,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        
+                        <a href="/tags/AppVeyor/" style="font-size: 10px;">AppVeyor</a> <a href="/tags/CI/" style="font-size: 10px;">CI</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a>
                     </div>
                 </section>
                 
@@ -162,7 +162,7 @@
                 <section class="switch-part switch-part3">
                     <div id="js-friends">
                     
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://blogs.msdn.microsoft.com/formulahendry/">formulahendry MSDN</a>
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://blogs.msdn.microsoft.com/formulahendry/">formulahendry MSDN Blog</a>
                     
                     </div>
                 </section>
@@ -214,19 +214,19 @@
             <nav class="header-nav">
                 <div class="social">
                     
-                        <a class="mail" target="_blank" href="#" title="mail">mail</a>
+                        <a class="mail" target="_blank" href="mailto:formulahendry@gmail.com" title="mail">mail</a>
                     
                         <a class="github" target="_blank" href="https://github.com/formulahendry" title="github">github</a>
                     
-                        <a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                        <a class="zhihu" target="_blank" href="https://www.zhihu.com/people/han-jun-96-36" title="zhihu">zhihu</a>
                     
-                        <a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+                        <a class="weibo" target="_blank" href="http://weibo.com/formulahendry" title="weibo">weibo</a>
                     
-                        <a class="google" target="_blank" href="#" title="google">google</a>
+                        <a class="google" target="_blank" href="https://plus.google.com/u/0/108325760150652720243" title="google">google</a>
                     
-                        <a class="twitter" target="_blank" href="#" title="twitter">twitter</a>
+                        <a class="twitter" target="_blank" href="https://twitter.com/formulahendry" title="twitter">twitter</a>
                     
-                        <a class="linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                        <a class="linkedin" target="_blank" href="https://cn.linkedin.com/in/jun-han" title="linkedin">linkedin</a>
                     
                         <a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
                     
@@ -237,11 +237,11 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-Hello-Hexo" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-hexo-ci" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/11/30/Hello-Hexo/" class="article-date">
-      <time datetime="2016-11-30T00:24:05.000Z" itemprop="datePublished">2016-11-30</time>
+      <a href="/2016/12/04/hexo-ci/" class="article-date">
+      <time datetime="2016-12-04T10:52:00.000Z" itemprop="datePublished">2016-12-04</time>
 </a>
     </div>
   
@@ -254,7 +254,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/30/Hello-Hexo/">Hello Hexo</a>
+      <a class="article-title" href="/2016/12/04/hexo-ci/">Hexo的版本控制与持续集成</a>
     </h1>
   
 
@@ -264,16 +264,29 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>Hello! Hexo!</p>
-
+              <p>想必很多人会把Hexo生成出来的静态网站放到GitHub Pages来进行托管。一般发布Hexo博客的流程是，首先在本地搭建Hexo的环境，编写新文章，然后利用<code>hexo deploy</code>来发布到Git。那么对于本地的Hexo的原始文件怎么管理呢？如果换电脑了怎么办？如果没有对原始文件进行备份，突然有一天你的本地环境挂了导致源文件丢失，那不就呵呵了。也许你会想到用Dropbox或者其他方案来对源文件进行备份，但是每次更新完博客，需要备份好源文件，然后执行<code>hexo deploy</code>进行发布，是不是很麻烦？换了电脑之后又要重新搭建本地环境，是不是很蛋疼？</p>
+<p>那么接下来我们就来说说如何优雅愉快地对我们的Hexo进行版本管理和发布。<br>
+          
       
     </div>
     
     <div class="article-info article-info-index">
       
       
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
+    </div>
+
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AppVeyor/">AppVeyor</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CI/">CI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/">Git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a  href="/2016/12/04/hexo-ci/#more">阅读全文 >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
