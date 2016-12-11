@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://formulahendry.github.io/"/>
-  <updated>2016-12-11T08:57:03.121Z</updated>
+  <updated>2016-12-11T09:03:12.070Z</updated>
   <id>https://formulahendry.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://formulahendry.github.io/2016/12/04/hexo-ci/"/>
     <id>https://formulahendry.github.io/2016/12/04/hexo-ci/</id>
     <published>2016-12-04T10:52:00.000Z</published>
-    <updated>2016-12-11T08:57:03.121Z</updated>
+    <updated>2016-12-11T09:03:12.070Z</updated>
     
     <content type="html"><![CDATA[<p>想必很多人会把Hexo生成出来的静态网站放到GitHub Pages来进行托管。一般发布Hexo博客的流程是，首先在本地搭建Hexo的环境，编写新文章，然后利用<code>hexo deploy</code>来发布到Git。那么对于本地的Hexo的原始文件怎么管理呢？如果换电脑了怎么办？如果没有对原始文件进行备份，突然有一天你的本地环境挂了导致源文件丢失，那不就呵呵了。也许你会想到用Dropbox或者其他方案来对源文件进行备份，但是每次更新完博客，需要备份好源文件，然后执行<code>hexo deploy</code>进行发布，是不是很麻烦？换了电脑之后又要重新搭建本地环境，是不是很蛋疼？</p>
 <p>那么接下来我们就来说说如何优雅愉快地对我们的Hexo进行版本管理和发布。<br><a id="more"></a></p>
