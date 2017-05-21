@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://formulahendry.github.io/works/index.html</loc>
+    
+    <lastmod>2017-05-21T11:26:35.573Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://formulahendry.github.io/2016/12/04/hexo-ci/</loc>
     
-    <lastmod>2016-12-11T09:03:12.070Z</lastmod>
+    <lastmod>2017-05-21T11:26:35.558Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://formulahendry.github.io/about/index.html</loc>
     
-    <lastmod>2016-12-11T09:03:12.070Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://formulahendry.github.io/works/index.html</loc>
-    
-    <lastmod>2016-12-11T09:03:12.070Z</lastmod>
+    <lastmod>2017-05-21T11:26:35.558Z</lastmod>
     
   </url>
   
